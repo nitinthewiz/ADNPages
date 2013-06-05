@@ -1,0 +1,19 @@
+Options +FollowSymLinks -Indexes
+
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteCond %{SCRIPT_FILENAME} !-d
+	RewriteCond %{SCRIPT_FILENAME} !-f
+
+	# Create that purrrty URL schema like:
+	# http://domain.com/posts/hello-world
+	RewriteRule ^posts/(.*)$ /view_post.php?name=$1
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 index.php
+</IfModule>
+
