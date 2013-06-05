@@ -1,4 +1,4 @@
-## Overview
+## ADNPages 2.0
 The PHP + Markdown blogging application is a project that will hopefully allow PHP
 developers to experience the simplicity and power of [Markdown](http://daringfireball.net/projects/markdown/) without the hassle of needing to write or configure a complex application.
 
